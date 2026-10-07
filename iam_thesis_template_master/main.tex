@@ -1,14 +1,14 @@
-\documentclass[english]{iamthesis}
+\documentclass[slovak]{iamthesis}
 % changle "slovak" to "english" for english version of the thesis
 
 %----------------------------------------------------------------%
 % THESIS DATA
 
 % thesis level {bc | ing | min | dis}
-\def\thesislevel{min}
+\def\thesislevel{bc}
 
 % student name with title e.g. Ing. Martin Klaučo
-\def\thesisauthor{Alexander Kolcak} 
+\def\thesisauthor{Alexander Kolčák} 
 
 % year of submmiting to AIS
 \def\thesisyear{2027}
@@ -18,17 +18,17 @@
 
 % thesis type: BACHELOR|MASTER|DISSERTATION or in slovak 
 % BAKALÁRSKA|DIPLOMOVÁ|DIZERTAČNÁ
-\def\thesistype{bakalarska}
+\def\thesistype{BAKALÁRSKA}
 
 % thesis title
-\def\thesistitle{identifikcia PID regulatora}
+\def\thesistitle{Identifikácia a implementácia PID regulatora vo výmenníku tepla HT36X}
 
 % thesis supervisor including degrees e.g. Ing. Martin Klaučo, PhD.
 \def\thesissupervisor{Ing. Juraj Holaza, PhD.}
 
-% study field (translate to english if neccesarry) e.g. "Riadenie Procesov" or
+% study field (translate to english if neccesarry) e.g. "Riadenie procesov" or
 % "Process Control"
-\def\thesisprogram{Riadenie Procesov}
+\def\thesisprogram{Riadenie procesov, Pokročilé riadenie, Chemické inžinierstvo}
 
 % Institute (translate to english if neccesary)
 % e.g., "Institute of Information Engineering, Automation, and Mathematics"
@@ -59,7 +59,6 @@
 % The Frontmatter  !! Do NOT change the structure !!             % 
 %----------------------------------------------------------------%
 % kommentovanie
-\%
 \coverpage
 
 \frontmatter
@@ -78,7 +77,6 @@
 \addcontentsline{toc}{chapter}{\thesisack}
 \input{content/acknowledgment}
 
-
 \chapter*{Abstract}
 \section{Nova Sekcia}
 \label{Zavolat } 
@@ -89,6 +87,8 @@
 \markboth{}{}
 \addcontentsline{toc}{chapter}{Abstract}
 \input{content/abstract_en}
+
+\begin{comment}
 Cislovana ronvica:
 \begin{equation}
 a^2 + b^2 = c^2
@@ -100,6 +100,7 @@ a^2 + b^2 = c^2
 \end{equation}
 
 f{eq: pytagorova veta} je cislvoana rovnica, v rovnici ~{}
+\end{comment}
 
 \chapter*{Abstrakt}
 \markboth{}{}
