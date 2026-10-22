@@ -1,0 +1,23 @@
+clc; clear; close all;
+
+t= linspace(0,10, 400);
+y= exp(-0.18*t).*sin(2*t);
+
+figure
+plot(t,y)
+grid on
+box on
+xlabel('$t$','Interpreter', 'latex')
+ylabel('$y(t)$', 'Interpreter', 'latex')
+title('Damped Oscillation')
+
+outputfolder = fullfile(pwd, 'images');
+
+f2p('damped_sine', ...
+    'Extenstion', 'tinkz', 'Path', outputfoleder, ...
+    'YLim', [-1,1], ...
+    'Xsplit', 5, ...
+    'Ysplit', 4, ...
+    'Xtol', 0, ...
+    'Ytol', 0.05, ...
+    'LIneWidth', 1.5)

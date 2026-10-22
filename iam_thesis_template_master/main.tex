@@ -1,4 +1,11 @@
 \documentclass[slovak]{iamthesis}
+\usepackage{tikz} % základná kžnica pre tvorenie obrázkov
+\usetikzlibrary{arrows.meta, positioning, calc}
+\usepackage{xcolor}
+\usepackage{amsmath}
+
+
+%\usepackage{c}
 % changle "slovak" to "english" for english version of the thesis
 
 %----------------------------------------------------------------%
@@ -8,7 +15,7 @@
 \def\thesislevel{bc}
 
 % student name with title e.g. Ing. Martin Klaučo
-\def\thesisauthor{Alexander Kolčák} 
+\def\thesisauthor{Alexander Kol\v{c}\'{a}k} 
 
 % year of submmiting to AIS
 \def\thesisyear{2027}
@@ -18,7 +25,7 @@
 
 % thesis type: BACHELOR|MASTER|DISSERTATION or in slovak 
 % BAKALÁRSKA|DIPLOMOVÁ|DIZERTAČNÁ
-\def\thesistype{BAKALÁRSKA}
+\def\thesistype{BAKAL\'{A}RSKA}
 
 % thesis title
 \def\thesistitle{Identifikácia a implementácia PID regulatora vo výmenníku tepla HT36X}
@@ -70,6 +77,11 @@
 % \includepdf[page=2]{content/assignment.pdf}
 
 
+
+
+
+
+
 % do not remove following commands
 % do not following commands
 \chapter*{\thesisack}
@@ -81,26 +93,23 @@
 \section{Nova Sekcia}
 \label{Zavolat } 
 \maketitle
-\chapter*{Abstract}
-\section{Nova Sekcia}
-\label{Zavolat } 
 \markboth{}{}
 \addcontentsline{toc}{chapter}{Abstract}
 \input{content/abstract_en}
 
-\begin{comment}
-Cislovana ronvica:
-\begin{equation}
-a^2 + b^2 = c^2
-\end{equation}
 
-Necislovana ronvica:
-\begin{equation}
-a^2 + b^2 = c^2
-\end{equation}
+%Cislovana ronvica:
+%\begin{equation}
+%a^2 + b^2 = c^2
+%\end{equation}
 
-f{eq: pytagorova veta} je cislvoana rovnica, v rovnici ~{}
-\end{comment}
+%Necislovana ronvica:
+%\begin{equation}
+%a^2 + b^2 = c^2
+%\end{equation}
+
+%f{eq: pytagorova veta} je cislvoana rovnica, v rovnici ~{}
+%\end{comment}
 
 \chapter*{Abstrakt}
 \markboth{}{}
